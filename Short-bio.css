@@ -11,7 +11,7 @@ body {
   align-items: center;
 }
 .full {
-  width: 80%;
+  /* width: 80%; */
   max-width: 1000px;
   min-height: 100px;
   background-color: rgb(245, 239, 231);
@@ -23,9 +23,12 @@ body {
   /* position: initial; */
   background-color: rgb(208, 206, 240);
   color: rgb(0, 0, 0);
-  padding: 20px;
+  padding-top: 6rem;
+  padding-left: 20px;
+  padding-right: 20px;
 }
-.left li {
+.left p {
+  font-weight: bold;
   margin-bottom: 0.5rem;
 }
 .right {
@@ -67,6 +70,13 @@ body {
 }
 .returnedtosoftware {
   list-style-type: none;
+}
+.fullstackdev {
+  font-weight: bold;
+}
+.email {
+  padding-top: 4rem;
+  font-weight: normal;
 }
 h3 {
   background-color: rgb(4, 96, 150);
