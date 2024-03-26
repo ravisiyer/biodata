@@ -36,6 +36,9 @@ body {
   word-break: break-word;
   /* word-break: break-all; */
 }
+.hideonsmalldev {
+  display: block;
+}
 .right {
   /* position: initial; */
   /* background-color: rgb(162, 202, 206); */
@@ -45,6 +48,9 @@ body {
 .toplevelbullet {
   list-style-type: disc;
   padding-left: auto;
+}
+.objectiveheading {
+  margin-bottom: 0.5rem;
 }
 .objectivetext {
   font-size: 1.2rem;
@@ -94,6 +100,9 @@ h3 {
   color: whitesmoke;
   padding-left: 0.25rem;
 }
+.namefull {
+  display: none;
+}
 /* .image,
 .Contact,
 .Skills,
@@ -106,3 +115,72 @@ h3 {
 .project {
   margin-bottom: 30px;
 } */
+
+@media only screen and (max-width: 600px) {
+  /* @media only screen and (max-width: 480px) { */
+  body {
+    margin: 0;
+    background-color: aliceblue;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+  }
+  .full {
+    /* width: 80%; */
+    max-width: 1000px;
+    min-height: 100px;
+    background-color: aliceblue;
+    margin: 0px;
+    display: block;
+    /* display: grid;
+    grid-template-columns: 25% auto; */
+    /* grid-template-columns: 1fr 4fr; */
+  }
+  .left {
+    /* position: initial; */
+    color: rgb(0, 0, 0);
+    background-color: aliceblue;
+    padding-left: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  .left p {
+    font-weight: bold;
+    /* font-weight: normal; */
+    /* font-size: 0.75rem; */
+    margin-bottom: 0.25rem;
+    margin-top: 0;
+    /* display: inline; */
+    word-break: break-word;
+    /* word-break: break-all; */
+  }
+  .right {
+    padding-top: 10px;
+  }
+  .hideonsmalldev {
+    display: none;
+  }
+  /* .left p:after {
+    content: ", ";
+  }
+  .left p:last-child::after {
+    content: "";
+  } */
+  .namefull {
+    padding-left: 20px;
+    display: block;
+    margin-bottom: 10px;
+  }
+  .nameright {
+    display: none;
+  }
+  .objectiveheading {
+    margin-top: 0;
+    /* margin-top: 0.25rem; */
+  }
+  .email {
+    padding-top: 0.25rem;
+    padding-bottom: 0;
+  }
+}
