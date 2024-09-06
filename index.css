@@ -43,6 +43,7 @@ body {
 .toplevelbullet {
   list-style-type: disc;
   padding-left: auto;
+  font-size: 1.1rem;
 }
 .objectiveheading {
   margin-bottom: 0.5rem;
@@ -63,6 +64,7 @@ body {
   list-style-type: disc;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+  font-size: 1.1rem;
 }
 .toplevelbullet li li {
   list-style-type: disc;
@@ -100,6 +102,9 @@ h4 {
   display: none;
 }
 
+/* Use below for printing biodata - the left side does not appear */
+/* @media (max-width: 1920px) { */
+/* Use below for regular usage */
 @media only screen and (max-width: 600px) {
   body {
     margin: 0;
