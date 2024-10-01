@@ -1,3 +1,0 @@
-After changing index.html, copy-paste it into index-plain.html and only change the stylesheet from index.css to index-plain.css.
-
-Will explore ways of doing stylesheet change via simple Javascript and query string parameters.

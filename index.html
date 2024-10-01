@@ -4,7 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ravi S. Iyer</title>
-    <link rel="stylesheet" href="index.css" />
+    <script>
+      let head = document.getElementsByTagName("HEAD")[0];
+      let link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.type = "text/css";
+      link.href = "index.css";
+
+      var urlParams = new URLSearchParams(window.location.search);
+      const displayParamName = "display";
+      const displayParamBWValue = "blackandwhite";
+      if (
+        urlParams.has(displayParamName) &&
+        urlParams.get(displayParamName).toLowerCase() === displayParamBWValue
+      ) {
+        link.href = "index-bw.css";
+      }
+
+      head.appendChild(link);
+    </script>
   </head>
   <body>
     <div class="full">
@@ -242,11 +260,12 @@
             </ul>
           </li>
         </ul>
-        <hr />
         <div class="printbw">
-          <a href="./index-plain.html">Plain black and white version</a> (useful
-          for printing)
-          <hr />
+          <hr class="endhr" />
+          <a href="./index.html?display=blackandwhite"
+            >Plain black and white version</a
+          >
+          (useful for printing)
         </div>
       </div>
     </div>
