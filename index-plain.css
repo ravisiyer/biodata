@@ -1,0 +1,69 @@
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: black;
+}
+
+.hideonsmalldev,
+.nameright,
+.printbw {
+  display: none;
+}
+
+.toplevelbullet {
+  list-style-type: disc;
+  padding-left: auto;
+  font-size: 1.1rem;
+}
+.objectivetext {
+  font-size: 1.2rem;
+}
+.returnedtosoftware {
+  font-size: 1.1rem;
+  margin-top: 0;
+  margin-bottom: 0.25rem;
+  list-style-type: none;
+  padding: 0.25rem;
+}
+.toplevelbullet li {
+  list-style-type: disc;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+.toplevelbullet li li {
+  list-style-type: disc;
+  padding-left: auto;
+  font-weight: normal;
+  font-size: 1.1rem;
+}
+.secondlevelperiod {
+  font-weight: bold;
+  font-style: italic;
+}
+.secondlevelperiod li {
+  font-weight: normal;
+  font-style: normal;
+}
+.fullstackdev {
+  font-weight: bold;
+}
+h3 {
+  padding-left: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+h4 {
+  margin-bottom: 0.5rem;
+}
+.namefull {
+  display: block;
+  margin-bottom: 10px;
+}
+.objectiveheading {
+  margin-top: 0;
+}
+.email {
+  padding-top: 0.25rem;
+  padding-bottom: 0;
+}
