@@ -13,13 +13,9 @@
     />
     <meta name="author" content="Ravi S. Iyer" />
     <title>Ravi S. Iyer résumé/biodata</title>
-    <script>
-      let head = document.getElementsByTagName("HEAD")[0];
-      let link = document.createElement("link");
-      link.rel = "stylesheet";
-      link.type = "text/css";
-      link.href = "index.css";
+    <link rel="stylesheet" href="index.css" id="stylesheet_colour" />
 
+    <script>
       var urlParams = new URLSearchParams(window.location.search);
       const displayParamName = "display";
       const displayParamBWValue = "blackandwhite";
@@ -27,10 +23,20 @@
         urlParams.has(displayParamName) &&
         urlParams.get(displayParamName).toLowerCase() === displayParamBWValue
       ) {
-        link.href = "index-bw.css";
-      }
+        let sheet = document.getElementById("stylesheet_colour");
+        if (sheet) {
+          sheet.disabled = true;
+          sheet.parentNode.removeChild(sheet);
+        }
 
-      head.appendChild(link);
+        let head = document.getElementsByTagName("HEAD")[0];
+        let link = document.createElement("link");
+        link.rel = "stylesheet";
+        link.type = "text/css";
+        link.href = "index.css";
+        link.href = "index-bw.css";
+        head.appendChild(link);
+      }
     </script>
   </head>
   <body>
