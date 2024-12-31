@@ -111,6 +111,13 @@ h4 {
   border-color: black;
 }
 
+.dsde {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-left: 1.5rem;
+}
+
 @media only screen and (max-width: 768px) {
   body {
     margin: 0;
