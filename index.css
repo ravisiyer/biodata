@@ -89,6 +89,12 @@ body {
   font-size: 1.25rem !important;
   word-break: break-all;
 }
+.linkedin {
+  padding-top: 0.25;
+  font-weight: normal !important;
+  font-size: 1.25rem !important;
+  word-break: break-all;
+}
 h3 {
   background-color: rgb(4, 96, 150);
   color: whitesmoke;
